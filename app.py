@@ -98,7 +98,7 @@ def main():
             tab1['الكود (ISIC 4)'] = df['ISIC4'].astype(str).str[:2]
             ta1=df['الأبواب'].astype(str).str.split('-',expand=True)
             cl=ta1[1].str.replace('\d+','')
-            tab1['البيان']=cl.str.replace(' ','')
+            tab1['البيان']=cl.str.strip()
             
             tab1['رأس المال (ألف دينار)']=df['إجمالي حجم رأس المال المستثمر للمنشأة الصناعية - د.ك']
             tab1['المساحة (ألف كيلو متر مربع)']=df['المساحة - متر مربع1']

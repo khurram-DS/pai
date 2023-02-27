@@ -204,12 +204,12 @@ def main():
             figua=pd.DataFrame(figu.loc['إجمالي المنشآت الصناعية']).reset_index()
             figua=figua.drop(index=[0,1])
             dict = {'index': 'نوع المساهمة',
-                    "إجمالي المنشآت الصناعية": 'الإجمالي',
+              
                     }
             figua.rename(columns=dict,
                       inplace=True)
           
-            fig4 = px.bar(figua, x='نوع المساهمة', y='الإجمالي',color='نوع المساهمة',title="Total {} based on 'الإجمالي' based on 'نوع المساهمة'".format(option),width=800, height=500)
+            fig4 = px.bar(figua, x='نوع المساهمة', y='إجمالي المنشآت الصناعية',color='نوع المساهمة',title="Total {} based on 'الإجمالي' based on 'نوع المساهمة'".format(option),width=800, height=500)
             st.write(fig4)
             
             

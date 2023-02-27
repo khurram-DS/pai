@@ -39,7 +39,7 @@ def main():
                  
                 
                  
-                 background-image: url("https://paitravels.com/wp-content/uploads/2021/08/kuwait-entry-1-1138x540.jpg");
+                 background-image: url("https://wallpaperaccess.com/full/1586344.jpg");
                  background-repeat: no-repeat;
                  background-size: cover;
                  background-position: center;

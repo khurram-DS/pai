@@ -330,7 +330,7 @@ def main():
                 st.write(fig6)
                 
                 st.subheader("Download the Table in Master Excel File")
-                with pd.ExcelWriter(towrite, engine="xlsxwriter") as writer:
+                with pd.ExcelWriter(towrite, engine="openpyxl") as writer:
                     da1.to_excel(writer, sheet_name="1", index=False)
                     da2.to_excel(writer, sheet_name="2", index=False)
                     da3.to_excel(writer, sheet_name="3", index=False)
